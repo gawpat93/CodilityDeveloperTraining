@@ -9,13 +9,10 @@
         public static int[] Solution(int[] A, int K)
         {
             var lenght = A.Length;
-            K = K % lenght;
             var B = new int[lenght];
-
             for (int i = 0; i < lenght; i++)
             {
-                var newPosition = i + K;
-                if (newPosition + 1 > lenght) newPosition = newPosition % lenght;
+                var newPosition = (i + K) % lenght;
                 B[newPosition] = A[i];
             }
 

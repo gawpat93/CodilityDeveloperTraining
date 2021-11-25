@@ -39,5 +39,15 @@ namespace Tests
             var result = CyclicRotation.Solution(A, K);
             Assert.True(expected.SequenceEqual(result));
         }
+
+        [Test]
+        public void CyclicRotationTest3()
+        {
+            var A = new int[] { 0, 0, 0 };
+            var K = 1;
+            var expected = new int[] { 0, 0, 0 };
+            var result = CyclicRotation.Solution(A, K);
+            Assert.True(expected.SequenceEqual(result));
+        }
     }
 }

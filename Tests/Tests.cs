@@ -49,5 +49,21 @@ namespace Tests
             var result = CyclicRotation.Solution(A, K);
             Assert.True(expected.SequenceEqual(result));
         }
+
+        [Test]
+        public void OddOccurrencesInArrayTest1()
+        {
+            var A = new int[] { 9, 3, 9, 3, 9, 7, 9 };
+            var result = OddOccurrencesInArray.Solution(A);
+            Assert.AreEqual(7, result);
+        }
+
+        [Test]
+        public void OddOccurrencesInArrayTest2()
+        {
+            var A = new int[] { 9, 8, 12, 8, 13, 6, 9, 6, 12 };
+            var result = OddOccurrencesInArray.Solution(A);
+            Assert.AreEqual(13, result);
+        }
     }
 }

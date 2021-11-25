@@ -1,5 +1,6 @@
 using Codility;
 using NUnit.Framework;
+using System.Linq;
 
 namespace Tests
 {
@@ -17,6 +18,26 @@ namespace Tests
             Assert.AreEqual(1, BinaryGap.Solution(20));
             Assert.AreEqual(0, BinaryGap.Solution(32));
             Assert.AreEqual(4, BinaryGap.Solution(529));
+        }
+
+        [Test]
+        public void CyclicRotationTest1()
+        {
+            var A = new int[] { 3, 8, 9, 7, 6 };
+            var K = 3;
+            var expected = new int[] { 9, 7, 6, 3, 8 };
+            var result = CyclicRotation.Solution(A, K);
+            Assert.True(expected.SequenceEqual(result));
+        }
+
+        [Test]
+        public void CyclicRotationTest2()
+        {
+            var A = new int[] { 1, 2, 3, 4 };
+            var K = 4;
+            var expected = new int[] { 1, 2, 3, 4 };
+            var result = CyclicRotation.Solution(A, K);
+            Assert.True(expected.SequenceEqual(result));
         }
     }
 }

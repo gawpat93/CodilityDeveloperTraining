@@ -1,4 +1,4 @@
-﻿namespace Codility
+﻿namespace Codility.Lesson1
 {
     /// <summary>
     /// BinaryGap

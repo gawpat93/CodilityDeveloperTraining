@@ -1,4 +1,4 @@
-﻿namespace Codility
+﻿namespace Codility.Lesson2
 {
     /// <summary>
     /// OddOccurrencesInArray

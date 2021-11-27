@@ -1,24 +1,11 @@
-using Codility;
+using Codility.Lesson2;
 using NUnit.Framework;
 using System.Linq;
 
 namespace Tests
 {
-    public class Tests
+    public class Lesson2Tests
     {
-        [Test]
-        public void BinaryGapTest()
-        {
-            Assert.AreEqual(0, BinaryGap.Solution(1));
-            Assert.AreEqual(0, BinaryGap.Solution(2));
-            Assert.AreEqual(0, BinaryGap.Solution(3));
-            Assert.AreEqual(0, BinaryGap.Solution(4));
-            Assert.AreEqual(2, BinaryGap.Solution(9));
-            Assert.AreEqual(0, BinaryGap.Solution(15));
-            Assert.AreEqual(1, BinaryGap.Solution(20));
-            Assert.AreEqual(0, BinaryGap.Solution(32));
-            Assert.AreEqual(4, BinaryGap.Solution(529));
-        }
 
         [Test]
         public void CyclicRotationTest1()

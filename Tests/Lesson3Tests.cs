@@ -28,5 +28,33 @@ namespace Tests
             var result = PermMissingElem.Solution(A);
             Assert.AreEqual(4, result);
         }
+
+        [Test]
+        public void FrogJmpTest1()
+        {
+            var result = FrogJmp.Solution(10, 85, 30);
+            Assert.AreEqual(3, result);
+        }
+
+        [Test]
+        public void FrogJmpTest2()
+        {
+            var result = FrogJmp.Solution(5, 85, 80);
+            Assert.AreEqual(1, result);
+        }
+
+        [Test]
+        public void FrogJmpTest3()
+        {
+            var result = FrogJmp.Solution(0, 60, 80);
+            Assert.AreEqual(1, result);
+        }
+
+        [Test]
+        public void FrogJmpTest4()
+        {
+            var result = FrogJmp.Solution(0, 30, 20);
+            Assert.AreEqual(2, result);
+        }
     }
 }
